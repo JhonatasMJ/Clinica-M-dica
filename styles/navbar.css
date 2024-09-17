@@ -1,0 +1,74 @@
+.header-bg {
+    background-color: #16697A;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: "Titillium Web", sans-serif;
+
+    padding: 14px 0px 14px 0px;
+  }
+  
+  .header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 42px;
+    list-style: none;
+  }
+  
+  .header-menu a {
+    padding: 4px 0px;
+    display: inline-block;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  .header-menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: 0.5s ease;
+  }
+  
+  .header-menu .contato {
+    display: flex;
+    align-items: center;
+    background-color: var(--preto-claro);
+    padding: 6px 30px;
+    border-radius: 2px;
+    color: var(--texto);
+    text-transform: uppercase;
+  }
+  
+  .header-menu .contato::after {
+    display: none;
+  }
+  
+  .header-menu a:hover::after {
+    width: 100%;
+  }
+  
+  .copy {
+    text-align: center;
+  }
